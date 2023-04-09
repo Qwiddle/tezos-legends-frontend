@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
+import { AppWrapper } from './styles';
 
 export function HomePage() {
   return (
@@ -8,7 +9,9 @@ export function HomePage() {
         <title>HomePage</title>
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
-      <span>My HomePage</span>
+      <AppWrapper>
+        <span>My HomePage</span>
+      </AppWrapper>
     </>
   );
 }
