@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import { StyleConstants } from './StyleConstants';
 
 export const GlobalStyle = createGlobalStyle`
   html,
@@ -8,7 +9,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-family: 'Inter', Helvetica, Arial, sans-serif;
+    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
+    background: ${p => p.theme.backgroundGradient};
   }
 
   #root {
