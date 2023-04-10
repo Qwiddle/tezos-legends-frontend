@@ -92,7 +92,6 @@ export const BidDetailsAvatar = styled.div`
   justify-content: center;
   width: 1.75rem;
   height: 1.75rem;
-  padding: 0;
   border-radius: 50%;
   background-color: ${p => p.theme.backgroundVariant};
   border: double 1px ${p => p.theme.brand};
@@ -102,6 +101,7 @@ export const BidDetailsAvatar = styled.div`
 export const BidDetailsAvatarImg = styled.img`
   width: 1.75rem;
   height: 1.75rem;
+  padding: 0.1rem;
 `;
 
 export const BidDetailsBidderName = styled(BidDetailsTitle)`
@@ -111,8 +111,8 @@ export const BidDetailsBidderName = styled(BidDetailsTitle)`
 export const BidDetailsLastBid = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   width: 100%;
+  justify-content: space-between;
 `;
 
 export const LastBidAmount = styled(BidDetailsTitle)`
@@ -124,6 +124,11 @@ export const LastBidAmount = styled(BidDetailsTitle)`
 export const LastBidTime = styled(LastBidAmount)`
   color: ${p => p.theme.textTertiary};
   font-weight: 400;
+`;
+
+export const LastBidArrow = styled.span`
+  color: ${p => p.theme.green};
+  font-weight: 600;
 `;
 
 export const ProgressBar = styled.div`
