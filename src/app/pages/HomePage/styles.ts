@@ -6,7 +6,7 @@ export const AppWrapper = styled.div`
   width: 100%;
   height: calc(100%);
   padding: 0 1.5rem;
-  padding-top: calc(12rem + ${StyleConstants.NAV_BAR_HEIGHT});
+  padding-top: calc(10rem + ${StyleConstants.NAV_BAR_HEIGHT});
   display: flex;
   flex-direction: column;
   justify-content: center;
