@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { AppWrapper } from './styles';
+import { NftCard } from './components/NftCard';
 
 export function HomePage() {
   return (
@@ -10,7 +11,7 @@ export function HomePage() {
         <meta name="description" content="A Boilerplate application homepage" />
       </Helmet>
       <AppWrapper>
-        <span>My HomePage</span>
+        <NftCard />
       </AppWrapper>
     </>
   );
