@@ -8,10 +8,7 @@ export const CardPrimary = styled.div`
   width: 380px;
   height: 380px;
   background: ${p => p.theme.backgroundGradient};
-  border: double 4px transparent;
   border-radius: 1rem;
-  background-origin: border-box;
-  background-clip: padding-box, border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 `;
 
@@ -27,6 +24,7 @@ export const CardDetails = styled.div`
 export const GridBackground = styled.div`
   width: 100%;
   height: 100%;
+  border-radius: 1rem;
   background-repeat: repeat;
   background-color: transparent;
   background-size: 15px 15px;

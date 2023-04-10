@@ -64,10 +64,10 @@ export const BidDetails = styled(CardPrimary)`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background: none;
   width: 50%;
   height: 100%;
-  padding: 0.75rem;
-  border: none;
+  padding: 0.25rem;
   border-radius: 7.95px;
   box-shadow: none;
 `;

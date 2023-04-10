@@ -30,7 +30,7 @@ import styled from 'styled-components';
 
 export const NftCard = () => {
   const [activeBidder, setActiveBidder] = useState<string | undefined>(
-    truncateMiddle('tz1RLomvUivaCNUmec7gALquhGMu5PgzMvkP', 12),
+    truncateMiddle('tz1RLomvUivaCNUmec7gALquhGMu5PgzMvkP', 14),
   );
 
   // todo: should use base64 svg
