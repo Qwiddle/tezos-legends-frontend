@@ -10,13 +10,13 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
     font-family: 'Inter', Helvetica, Arial, sans-serif;
-    padding-top: ${StyleConstants.NAV_BAR_HEIGHT};
-    background: ${p => p.theme.backgroundGradient};
+
   }
 
   #root {
     min-height: 100%;
     min-width: 100%;
+    background: ${p => p.theme.backgroundGradient};
   }
 
   p,

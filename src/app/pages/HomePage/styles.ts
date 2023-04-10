@@ -1,15 +1,18 @@
 import styled from 'styled-components';
 import { StyleConstants } from 'styles/StyleConstants';
+import { media } from 'styles/media';
 
 export const AppWrapper = styled.div`
   width: 100%;
-  height: calc(100vh - ${StyleConstants.NAV_BAR_HEIGHT});
+  height: calc(100%);
   padding: 0 1.5rem;
-  padding-top: 12rem;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  grid-template-rows: 1fr auto;
-  grid-column-gap: 0px;
-  grid-row-gap: 0px;
-  justify-items: center;
+  padding-top: calc(12rem + ${StyleConstants.NAV_BAR_HEIGHT});
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  @media screen and (min-width: 800px) {
+    flex-direction: row;
+  }
 `;
